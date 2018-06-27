@@ -1,0 +1,21 @@
+class Solution 
+{
+public:
+    bool isPowerOfThree(int a) 
+    {
+        while( a > 0 && a%3 == 0)
+        {
+            a /= 3;
+        }
+        if( a == 1)
+        {
+        cout<<"a is the power of 3"<<endl;
+        return true;
+        }
+        else
+        {
+        cout<<"a is not the power of 3"<<endl;
+        return false;
+        }
+    }
+};
